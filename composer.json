@@ -1,0 +1,45 @@
+{
+    "name": "pigvelop/lumen-application",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/pigvelop/lumenapplication",
+    "keywords": ["Laravel", "LumenApplication"],
+    "require": {
+        "illuminate/console": "~5",
+        "illuminate/encryption": "~5",
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pigvelop\\LumenApplication\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pigvelop\\LumenApplication\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pigvelop\\LumenApplication\\LumenApplicationServiceProvider"
+            ],
+            "aliases": {
+                "LumenApplication": "Pigvelop\\LumenApplication\\Facades\\LumenApplication"
+            }
+        }
+    }
+}
