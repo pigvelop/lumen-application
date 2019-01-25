@@ -1,8 +1,9 @@
 # Changelog
 
-All notable changes to `LumenApplication` will be documented in this file.
+All notable changes to `Lumen Application` will be documented in this file.
 
-## Version 1.0
+## Version 5.5.0
 
 ### Added
-- Everything
+
+- Suport for Lumen 5.5

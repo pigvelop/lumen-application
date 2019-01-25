@@ -1,5 +1,5 @@
 # The license
 
-Copyright (c) author name <author email>
+Copyright (c) Caique Bertolozzi <caiquebb@gmail.com>
 
 ...Add your license text here...

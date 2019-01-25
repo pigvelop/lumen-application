@@ -1,16 +1,16 @@
 {
     "name": "pigvelop/lumen-application",
-    "description": ":description",
-    "license": "license",
+    "description": "Application for Lumen 5.5",
+    "license": "MIT",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Caique Bertolozzi",
+            "email": "caiquebb@gmail.com",
+            "homepage": "https://github.com/caiquebb"
         }
     ],
-    "homepage": "https://github.com/pigvelop/lumenapplication",
-    "keywords": ["Laravel", "LumenApplication"],
+    "homepage": "https://github.com/pigvelop/lumen-application",
+    "keywords": ["Laravel", "Lumen", "Application"],
     "require": {
         "illuminate/console": "~5",
         "illuminate/encryption": "~5",

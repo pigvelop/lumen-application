@@ -5,14 +5,14 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+This is an Application class to add some features to Lumen Framework. Take a look at [contributing.md](contributing.md) to see a to do list.
 
 ## Installation
 
 Via Composer
 
 ``` bash
-$ composer require pigvelop/lumenapplication
+composer require pigvelop/lumen-application
 ```
 
 ## Usage
