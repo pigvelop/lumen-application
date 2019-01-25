@@ -1,4 +1,4 @@
-# LumenApplication
+# Lumen Application
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -24,7 +24,7 @@ Please see the [changelog](changelog.md) for more information on what has change
 ## Testing
 
 ``` bash
-$ composer test
+composer test
 ```
 
 ## Contributing
@@ -33,11 +33,11 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 
 ## Security
 
-If you discover any security related issues, please email author email instead of using the issue tracker.
+If you discover any security related issues, please email caiquebb@gmail.com instead of using the issue tracker.
 
 ## Credits
 
-- [author name][link-author]
+- [Caique Bertolozzi][link-author]
 - [All Contributors][link-contributors]
 
 ## License
@@ -53,5 +53,5 @@ license. Please see the [license file](license.md) for more information.
 [link-downloads]: https://packagist.org/packages/pigvelop/lumenapplication
 [link-travis]: https://travis-ci.org/pigvelop/lumenapplication
 [link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/pigvelop
+[link-author]: https://github.com/caiquebb
 [link-contributors]: ../../contributors
