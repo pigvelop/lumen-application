@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Contracts\Debug\ExceptionHandler;
+use Symfony\Component\Debug\Exception\FatalThrowableError;
+
 if (! function_exists('config_path')) {
     /**
      * Get the configuration path.
@@ -23,5 +26,22 @@ if (! function_exists('public_path')) {
     function public_path($path = null)
     {
         return rtrim(app()->basePath('public/' . $path), '/');
+    }
+}
+
+if (! function_exists('report')) {
+    /**
+     * Report an exception.
+     *
+     * @param  \Exception  $exception
+     * @return void
+     */
+    function report($exception)
+    {
+        if ($exception instanceof Throwable &&
+            ! $exception instanceof Exception) {
+            $exception = new FatalThrowableError($exception);
+        }
+        app(ExceptionHandler::class)->report($exception);
     }
 }
