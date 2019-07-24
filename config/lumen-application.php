@@ -15,6 +15,8 @@ return [
     'name' => env('APP_NAME', 'Lumen'),
     
     'version' => env('APP_VERSION', 'local'),
+
+    'debug' => env('APP_DEBUG', false),
     
     /*
     |--------------------------------------------------------------------------
