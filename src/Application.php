@@ -20,6 +20,21 @@ class Application extends LumenApplication
      * @var string
      */
     protected $environmentFile = '.env';
+
+    /**
+     * Create a new Lumen application instance.
+     *
+     * @param  string|null  $basePath
+     * @return void
+     */
+    public function __construct($basePath = null)
+    {
+        parent::__construct($basePath);
+
+        if (! empty(config('app.timezone'))) {
+            date_default_timezone_set(config('app.timezone', 'UTC'));
+        }
+    }
     
     /**
      * Get the path to the environment file directory.
@@ -94,5 +109,16 @@ class Application extends LumenApplication
         }
 
         return 'Lumen (5.5.2) (Laravel Components 5.5.*)';
+    }
+
+    /**
+     * Set the current application locale.
+     *
+     * @param  string  $locale
+     * @return void
+     */
+    public function setLocale($locale)
+    {
+        $this['config']->set('app.locale', $locale);
     }
 }
